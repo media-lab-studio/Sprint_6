@@ -38,7 +38,7 @@ public class OrderTest extends BaseTest {
         );
     }
 
-    @ParameterizedTest(name = "Оформление заказа через {0}: {1}")
+    @ParameterizedTest(name = "Оформление заказа через {0}")
     @MethodSource("orderData")
     public void testOrderCreation(String buttonType, String name, String surname, String address, String metro, String phone,
                                   int deliveryDay, String rentalPeriod, String comment, boolean black, boolean grey) {
